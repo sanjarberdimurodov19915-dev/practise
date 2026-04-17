@@ -16,5 +16,9 @@ in Python, variable is named reference
 
 4. Boolenlarni o'rganamiz
 
+TRUTHY (true, number (5), 'string' ) vs 
+FALSY (false, none, o, 'bo'sh string') value
+TRUTHY qiymatlarini > True ga o'girib beradi 
+FALSY qiymatlarini > Falsy ga o'girib beradi
 
 
