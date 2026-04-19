@@ -42,11 +42,18 @@ try:
     print("result:", result)
 
     # pass
-except KeyError as err:
-    print("No origin state property found:", err)
+
+except Exception as err:
+    print("General Error:", err)
+
+# except (KeyError, AttributeError) as err:
+   # print("Error:", err)
+
+# except KeyError as err:
+    # print("No origin state property found:", err)
     # pass
-except AttributeError as err:
-    print("No speed found:", err)
+# except AttributeError as err:
+    # print("No speed found:", err)
 
 else:
     print("Executed succesfully without errors")
