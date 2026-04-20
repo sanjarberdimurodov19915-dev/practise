@@ -20,10 +20,11 @@ function countLetter(letter, word) {
 console.log(countLetter("i", "intercontinental"));
 console.log(countLetter("s", "samarqand"));
 */
-/* 
-B-TASK (Nodejs)
 
-Shunday function tuzing, u 1ta string parametrga ega bolsin, hamda osha stringda qatnashgan raqamlarni sonini bizga return qilsin.
+/* 
+MITASK-B
+
+Savol: Shunday function tuzing, u 1ta string parametrga ega bolsin, hamda osha stringda qatnashgan raqamlarni sonini bizga return qilsin.
 
 MASALAN countDigits("ad2a54y79wet0sfgb9") 7ni return qiladi.
 */
