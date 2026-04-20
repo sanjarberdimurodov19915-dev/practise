@@ -1,3 +1,4 @@
+// ANIMAL CHALLENGE
 const animals = ["fox", "horse", "ant", "bird", "lion", "wolf", "deer", "bear", "frog", "hen", "mole", "duck", "goat", "dog", "cat", "bat", "cock", "cow"];
 
 function findAnimals(animals, letter) {
