@@ -1,10 +1,28 @@
-/* 
+/*
+MITASK-C
+
+Savol: Shunday function tuzing, u 2ta string parametr ega bolsin, hamda agar har ikkala string bir hil harflardan iborat bolsa true aks holda false qaytarsin
+MASALAN checkContent("mitgroup", "gmtiprou") return qiladi true;
+*/
+// Masalaning yechimi:
+function checkContent(word1, word2) {
+    if (word1.length !== word2.length) {
+        return false;
+    }
+    let sorted1 = word1.split('').sort().join('');
+    let sorted2 = word2.split('').sort().join('');
+    return sorted1 === sorted2;
+}
+
+console.log(checkContent('sanjar', 'ranjas'));
+
+/*
 MITASK-B
 
 Savol: Shunday function tuzing, u 1ta string parametrga ega bolsin, hamda osha stringda qatnashgan raqamlarni sonini bizga return qilsin.
 
 MASALAN countDigits("ad2a54y79wet0sfgb9") 7ni return qiladi.
-*/
+
 // Masalaning yechimi:
 
 function countDigits(text) {
@@ -19,6 +37,7 @@ function countDigits(text) {
 
 const result = countDigits("oohfks743bh4thtb5hb5t5h4brrjej2");
 console.log(result);
+*/
 
 /* MITASK-A
 
