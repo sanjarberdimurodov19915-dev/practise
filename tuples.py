@@ -57,8 +57,24 @@ def calculate(*args):
     return total
 
 
+# CALL
 calculate(1, 7, 2, 3)
 print("----------------")
 calculate(0, 2, 300)
 print("----------------")
 calculate(5, 7)
+
+# **kwargs > dictionary orqali hosil qilish
+
+print("----------------")
+
+
+def introduce(**kwargs):
+    print(f"the type(**kwargs) value: {type(kwargs)}")
+    print(f"Hi, I am {kwargs["name"]} and I am {kwargs["age"]} yers old!")
+    pass
+
+
+# CALL
+introduce(name="Sanjar", age=35)
+introduce(name="Rustam", age=30, single=True)
