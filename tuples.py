@@ -44,7 +44,7 @@ groups = ["MIT", "FLEXY", "DEVEX", "MG"]
 print(f"the x: {x} and y: {y}")
 print("z:", z)  # list qaytaradi
 
-# *args > tuple (args bu tuple degani)
+# *args > tuple (args bu tuple degani), nechta parametr ketishini bilmasak tupleni args bilan quramiz
 
 
 def calculate(*args):

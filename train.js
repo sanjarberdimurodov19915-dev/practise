@@ -1,9 +1,30 @@
 /*
+MITASK-D
+
+Savol: Shunday function tuzingki unga integerlardan iborat array pass bolsin va 
+function bizga osha arrayning eng katta qiymatiga tegishli birinchi indexni qaytarsin.
+MASALAN: getHighestIndex([5, 21, 12, 21, 8]) return qiladi 1 sonini.
+*/
+// Masalaning yechimi:
+function getHighestIndex(array1) {
+    let max = 0;
+    for (let i = 0; i < array1.length; i++) {
+        if (array1[i] > array1[max]) {
+            max = i;
+        }
+    }
+    return max;
+}
+
+const result = [5, 21, 12, 21, 8];
+console.log(getHighestIndex(result));
+
+/*
 MITASK-C
 
 Savol: Shunday function tuzing, u 2ta string parametr ega bolsin, hamda agar har ikkala string bir hil harflardan iborat bolsa true aks holda false qaytarsin
 MASALAN checkContent("mitgroup", "gmtiprou") return qiladi true;
-*/
+
 // Masalaning yechimi:
 function checkContent(word1, word2) {
     if (word1.length !== word2.length) {
@@ -15,6 +36,7 @@ function checkContent(word1, word2) {
 }
 
 console.log(checkContent('sanjar', 'ranjas'));
+*/
 
 /*
 MITASK-B
