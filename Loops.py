@@ -5,7 +5,7 @@
 '''
 
 print("========== for operator ==========")
-# iterable objects > string, dict, tuple, list, range, map, filter
+# iterable objects > string, dict, tuple, zip, list, range, map, filter
 text = "MIT"
 numbs = [10, 7, 3, 4]
 car_obj = dict(brand="Ferrari", year=2025)
