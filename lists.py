@@ -2,7 +2,7 @@
     (1) Working with lists
     (2) List methods
     (3) Lambda function
-    (4) enumarate, map and filter
+    (4) enumerate, map and filter
 
 '''
 
@@ -111,3 +111,55 @@ print("people(1):", people)
 # sorted by age via lambda
 people.sort(key=lambda person: person[1])
 print("people(2):", people)
+
+print("========== enumerate, map and filter ==========")
+# enumerate for index & value
+
+animals = ["dog", "cat", "fish"]  # list
+for element in animals:
+    print("element:", element)
+
+for element in enumerate(animals):
+    print("element:", element)
+# yoyish uchun
+for (index, value) in enumerate(animals):
+    print(f"the index: {index} and value: {value}")
+
+# similar in dictionary
+car_obj = dict(brand="Ferrari", year=2025)
+result1 = car_obj.get("brand")
+print(result1)
+
+print("--------------------")
+car_obj = dict(brand="Ferrari", year=2025)
+result2 = car_obj.items()
+print(result2)
+for (key, value) in result2:
+    print(f"the key: {key} and value: {value}")
+
+print("--------------------")
+# map
+cars = [
+    ("Ferrari", 78),
+    ("Tayota", 87),
+    ("Audi", 116),
+    ("BMW", 109),
+    ("Paganit", 33)
+]
+
+# new_cars = []
+# for car in cars:
+#     new_cars.append(car[0])
+# print("new_car(1):", new_cars)
+
+# using map
+result_map = map(lambda car: car[0], cars)
+print(f"the result1: {result_map} and type: {type(result_map)}")
+new_cars = list(result_map)
+print("new_cars(2):", new_cars)
+
+print("--------------------")
+# filter
+result_filter = filter(lambda car: car[1] > 80, cars)
+print(f"the result_filter: {result_filter} and type: {type(result_filter)}")
+print(list(result_filter))
