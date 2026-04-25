@@ -63,3 +63,29 @@ print("animals remove", animals)
 
 del animals[2: 4]
 print("animals delete:", animals)
+
+exist = animals.index("cat")  # element mavjud bo'lsa index raqamini qaytaradi
+print("cat exist:", exist)       # mavjud bo'lmasa value error qaytaradi
+
+animals.clear()
+print("animals clear:", animals)
+
+# exist2 = animals.index("cat") # bu holda indexni olib bo'lmaydi
+# print("exist2:", exist2)
+# shuning uchun errorni
+if "cat" in animals:
+    print("index of cat:", animals.index("cat"))
+else:
+    print("cat does not exist")
+
+print("--------------------")
+numbers = [2, 20, 12, 8, 57]
+numbers.sort()
+print("sort default numbers:", numbers)
+numbers.sort(reverse=True)
+print("sort reverse:", numbers)
+
+# immutable sort amalini hosil qilmoqchi bo'lsak sorted functionidan foydalanamiz
+numbs = [2, 20, 12, 100]
+new_numbs = sorted(numbs)
+print(f"the sorted numbs: {numbs} and new_numbs: {new_numbs}")
