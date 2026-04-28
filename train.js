@@ -1,4 +1,23 @@
 /*
+MITASK-F
+
+Savol: Shunday findDoublers function tuzing, unga faqat bitta string argument pass bolib, agar stringda bir hil harf qatnashgan bolsa true, qatnashmasa false qaytarishi kerak.
+MASALAN: getReverse("hello") return true return qiladi
+*/
+// Masalaning yechimi:
+function findDoublers(word) {
+    for (let i = 0; i < word.length - 1; i++) {
+        if (word[i] === word[i + 1]) {
+            return true
+        }
+    }
+    return false;
+}
+
+result = findDoublers("hello");
+console.log(result)
+
+/*
 MITASK-E
 
 Savol: Shunday function tuzing, u bitta string argumentni qabul qilib osha stringni teskari qilib return qilsin.
