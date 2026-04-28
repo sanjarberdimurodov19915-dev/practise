@@ -31,3 +31,14 @@ Learning GIT and Python Foundation
 - Array
 - Comprehension
 - Packages & Debugging
+
+## Pip commands:
+'''
+windows pip | macOS pip3
+pip list
+pip install pillow
+pip uninstall pillow
+pip show pillow
+pip freeze > requirements.txt
+
+'''
