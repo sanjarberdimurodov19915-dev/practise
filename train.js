@@ -5,16 +5,25 @@ Savol: Shunday function tuzing, u bitta string argumentni qabul qilib osha strin
 MASALAN: getReverse("hello") return qilsin "olleh"
 */
 // Masalaning yechimi:
-function getReverse(word) {
-    let newWord = "";
-    for (let i = word.length - 1; i >= 0; i--) {
-        newWord += word[i];
-    }
-    return newWord;
-}
-const word = "hello"
-const result = getReverse(word);
-console.log(result)
+// function getReverse(word) {
+//     let newWord = "";
+//     for (let i = word.length - 1; i >= 0; i--) {
+//         newWord += word[i];
+//     }
+//     return newWord;
+// }
+// const word = "hello"
+// const result = getReverse(word);
+// console.log(result)
+
+// function getReverse(name) {
+//     let b = ""
+//     for (x of name) {
+//         b = x + b
+//     }
+//     return b
+// }
+// console.log(getReverse("Kelly"))
 
 /*
 MITASK-D

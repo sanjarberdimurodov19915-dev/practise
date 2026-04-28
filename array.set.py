@@ -39,7 +39,7 @@ numbs_set.add(7)
 print("numbs_set2:", numbs_set)
 
 print("=========== Specific operators with set ===========")
-# | & - ^
+# BITWISE OPERATORS: | & - ^
 
 a = {10, 20, 50}
 b = {20, 40}
