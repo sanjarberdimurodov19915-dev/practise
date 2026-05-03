@@ -1,9 +1,29 @@
 /*
+MITASK-H
+
+Savol: shunday function tuzing, u integerlardan iborat arrayni argument sifatida qabul qilib, faqat positive qiymatlarni olib string holatda return qilsin
+MASALAN: getPositive([1, -4, 2]) return qiladi "12"
+*/
+// Masalaning yechimi:
+function getPositive(array1) {
+    let positives = [];
+    for (let i = 0; i < array1.length; i++) {
+        if (array1[i] > 0) {
+            positives.push(array1[i]);
+        }
+    }
+    return positives;
+}
+
+result = getPositive([1, -4, 2]);
+console.log(result)
+
+/*
 MITASK-F
 
 Savol: Shunday findDoublers function tuzing, unga faqat bitta string argument pass bolib, agar stringda bir hil harf qatnashgan bolsa true, qatnashmasa false qaytarishi kerak.
 MASALAN: getReverse("hello") return true return qiladi
-*/
+
 // Masalaning yechimi:
 function findDoublers(word) {
     for (let i = 0; i < word.length - 1; i++) {
@@ -16,7 +36,7 @@ function findDoublers(word) {
 
 result = findDoublers("hello");
 console.log(result)
-
+*/
 /*
 MITASK-E
 
