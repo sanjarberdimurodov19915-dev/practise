@@ -1,0 +1,17 @@
+'''
+MITASK-I
+Savol: Shunday function tuzing, unga string argument pass bolsin. Function ushbu agrumentdagi digitlarni yangi stringda return qilsin
+MASALAN: get_digits("m14i1t") return qiladi "141"
+'''
+# Masalaning yechimi:
+
+
+def get_digits(text):
+    new_text = []
+    for ele in text:
+        if ele.isdigit():
+            new_text.append(ele)
+    return "".join(new_text)
+
+
+print(get_digits("m14i1t"))

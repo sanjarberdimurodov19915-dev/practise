@@ -1,9 +1,20 @@
 /*
+MITASK-I
+
+Savol: Shunday function tuzing, unga string argument pass bolsin. Function ushbu agrumentdagi digitlarni yangi stringda return qilsin
+MASALAN: get_digits("m14i1t") return qiladi "141"
+*/
+// Masalaning yechimi:
+
+
+
+
+/*
 MITASK-H
 
 Savol: shunday function tuzing, u integerlardan iborat arrayni argument sifatida qabul qilib, faqat positive qiymatlarni olib string holatda return qilsin
 MASALAN: getPositive([1, -4, 2]) return qiladi "12"
-*/
+
 // Masalaning yechimi:
 function getPositive(array1) {
     let positives = [];
@@ -17,7 +28,7 @@ function getPositive(array1) {
 
 result = getPositive([1, -4, 2]);
 console.log(result)
-
+*/
 /*
 MITASK-F
 
