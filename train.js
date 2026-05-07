@@ -1,13 +1,36 @@
 /*
-MITASK-I
+MITASK-G
 
+Savol: Shunday function yozing, u parametridagi array ichida eng kop takrorlangan raqamni topib qaytarsin.
+MASALAN: majorityElement([1,2,3,4,5,4,3,4]) return 4
+*/
+// Masalaning yechimi:
+
+function majorityElement(array1) {
+    const map = new Map();
+    let max = 0;
+    let num;
+    for (let n of array1) {
+        map.set(n, (map.get(n) || 0) + 1);
+
+        if (map.get(n) > max) {
+            max = map.get(n);
+            num = n;
+        }
+    }
+    return num;
+}
+
+result = majorityElement([1, 2, 3, 4, 5, 4, 3, 4]);
+console.log(result);
+
+
+/*
+MITASK-I
 Savol: Shunday function tuzing, unga string argument pass bolsin. Function ushbu agrumentdagi digitlarni yangi stringda return qilsin
 MASALAN: get_digits("m14i1t") return qiladi "141"
 */
 // Masalaning yechimi:
-
-
-
 
 /*
 MITASK-H
