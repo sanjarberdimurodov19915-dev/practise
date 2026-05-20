@@ -1,8 +1,28 @@
+'''
+MITASK-O
+
+Savol: Shunday function yozing, u har xil valuelardan iborat array qabul qilsin va List ichidagi sonlar yigindisini hisoblab 
+chiqqan javobni qaytarsin.
+MASALAN: calculate_summary([10, "10", {son: 10}, true, 35]) return 45
+'''
+# Masalaning yechimi:
+
+
+def calculate_summary(arr):
+    total = 0
+    for item in arr:
+        if isinstance(item, (int, float)) and not isinstance(item, bool):
+            total += item
+    return total
+
+
+print(calculate_summary([10, "10", {"son": 10}, True, 35]))
+
 ''' MITASK-M
 Savol: Shunday function yozing, u string qabul qilsin va string palindrom yani togri oqilganda ham, 
 orqasidan oqilganda ham bir hil oqiladigan soz ekanligini aniqlab boolean qiymat qaytarsin.
 MASALAN: palindrom_check("dad") return True;  palindrom_check("son") return False;
-'''
+
 # Masalaning yechimi:
 
 
@@ -11,7 +31,7 @@ def palindrom_check(text):
 
 
 print(palindrom_check("son"))
-
+'''
 '''
 MITASK-K
 Savol: Shunday function yozing, u string qabul qilsin va string ichidagi eng uzun sozni qaytarsin.
